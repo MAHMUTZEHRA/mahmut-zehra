@@ -1,0 +1,581 @@
+:root{
+    --pink:#e84393;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+
+.heading span{
+    color: #e84393;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: #e84393;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0  .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: #e84393;
+} 
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0  1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: #e84393;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: #e84393;
+}
+
+header #chek{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(image/Untitled-5.jpg) no-repeat;
+    background-size: cover;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .vedo-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .vedo-container video{
+    width: 100%;
+    height: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    object-fit: cover;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.icons-cont{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-cont .icon{
+    background: #fff;
+    border: 0.1 solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.icons-cont .icon img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.icons-cont .icon h3{
+    color: #333;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.icons-cont .icon span{
+    color: #555;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+.Products{
+    text-align: center;
+}
+
+.Products .pro-con{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.Products .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    position: relative;
+    margin: 10px;
+}
+
+.Products .pro:hover{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+.Products .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.Products .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+.Products .pro .des span{
+    color: #333;
+    font-size: 14px;
+}
+
+.Products .pro .des h5{
+    margin-top: 7px;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 16px;
+}
+
+.Products .pro .des i{
+    font-size: 14px;
+    color: gold;
+}
+
+.Products .pro .des h4{
+    padding-top: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    color: green;
+}
+
+.Products .pro .cart{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #d6fff3;
+    color: green;
+    border: 1px solid #bcfbe8;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+
+.review .box-conts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-conts .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.review .box-conts .box .fa-quote-right{
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: #eee;
+}
+
+.review .box-conts .box .stars i{
+    color: var(--pink);
+    font-size: 2rem;
+}
+
+.review .box-conts .box p{
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.review .box-conts .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-conts .box .user img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-conts .box .user h3{
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.review .box-conts .box .user span{
+    font-size: 1.5rem;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow:  0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-decoration: none;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus{
+    border-color: var(--pink);
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+.footer .box-con{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-con .box{
+    flex: 1 1 30rem;
+}
+
+.footer .box-con .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-con .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-con .box a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+.footer .box-con .box img{
+    margin-top: 1rem;
+    width: 15rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    color: var(--pink);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+    .Products .pro {
+        width: 30%; 
+      }
+    
+}
+
+
+
+
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0 , 100% 0, 0 0);
+    }
+
+    header #chek:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0 , 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1 rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    .home .content h2{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+    .icons-cont .icon h3{
+        font-size: 2rem;
+    }
+    
+    .icons-cont .icon span{
+        font-size: 1.7rem;
+    }
+    .Products .pro {
+        width: 45%; 
+      }
+    
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+    
+    .heading{
+        font-size: 3rem;
+    }
+
+    .Products .pro {
+        width: 90%; 
+      }
+}
+
+
+
